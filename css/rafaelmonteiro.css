@@ -14,7 +14,7 @@ section .content{ position: relative;}
 section h1,
 section h2{font-family: 'Peralta', "Trebuchet MS", Helvetica, sans-serif;}
 
-section#start img{margin:2em 0 0 0;}
+section#start img{margin:1em 0;}
 section#start h1,
 section#start h2{color:#FFF; font-size: 3em; margin:0.5em 0 0 0;}
 section#start h2{font-size: 1.8em;}
