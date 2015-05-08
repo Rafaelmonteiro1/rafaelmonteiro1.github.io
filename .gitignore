@@ -1,0 +1,2 @@
+# ignore todos os arquivos no diretório build/
+node_modules/

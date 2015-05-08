@@ -1,0 +1,13 @@
+{
+  "name": "Grunt",
+  "version": "1.0.0",
+  "title": "Grunt Estudo",
+  "homepage": "localhost",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-cli": "~0.1.13",
+    "grunt-contrib-sass": "^0.9.2",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
