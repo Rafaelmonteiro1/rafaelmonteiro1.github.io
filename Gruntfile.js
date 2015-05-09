@@ -29,17 +29,30 @@ module.exports = function( grunt ) {
 
         tasks : [ 'uglify', 'sass' ]
       }
-    } // watch
+    }, // watch
+    imagemin: {                          // Task 
+      dynamic: {                         // Another target 
+        files: [{
+          expand: true,                  // Enable dynamic expansion 
+          cwd: 'assets/_img/',                   // Src matches are relative to this path 
+          src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match 
+          dest: 'assets/img/'                  // Destination path prefix 
+        }]
+      }
+    } // Imagemin
   });
 
 
+
+
   // Plugins do Grunt
+  grunt.loadNpmTasks( 'grunt-contrib-imagemin' );
   grunt.loadNpmTasks( 'grunt-contrib-uglify' );
   grunt.loadNpmTasks( 'grunt-contrib-sass' );
   grunt.loadNpmTasks( 'grunt-contrib-watch' );
 
   // Tarefas que serão executadas
-  grunt.registerTask( 'default', [ 'uglify', 'sass' ] );
+  grunt.registerTask( 'default', [ 'uglify', 'sass' , 'imagemin' ] );
 
   // Tarefa para Watch
   grunt.registerTask( 'w', [ 'watch' ] );

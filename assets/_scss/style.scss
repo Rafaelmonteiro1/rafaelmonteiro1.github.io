@@ -2,7 +2,7 @@
 
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
-$primary-color: #999;
+$bg-color-links: #999;
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -10,7 +10,6 @@ $primary-color: #999;
       -ms-border-radius: $radius;
           border-radius: $radius;
 }
-
 
 body {
   font: 100% $font-stack;
