@@ -14,9 +14,13 @@ module.exports = function( grunt ) {
     }, // uglify
     sass : {
       dist : {
-        options : { style : 'compressed' },
+        options : { 
+          style : 'compressed',
+          compass : true,
+          debugInfo : true
+        },
         files : {
-          'assets/css/style.min.css' : 'assets/_scss/style.scss'
+          'assets/css/style.min.css' : 'assets/_scss/gumby.scss'
         }
       }
     }, // sass
@@ -41,8 +45,6 @@ module.exports = function( grunt ) {
       }
     } // Imagemin
   });
-
-
 
 
   // Plugins do Grunt
