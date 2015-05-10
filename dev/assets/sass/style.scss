@@ -1,0 +1,34 @@
+@import "foundation";
+@import "_settings";
+@import "_variables";
+
+// Or selectively include components
+
+body {
+  background: blue;
+}
+
+@media #{$small-only} {
+  body {
+    background: red;
+  }
+}
+
+@media #{$medium-only} {
+  body {
+    background: green;
+  }
+}
+
+@media #{$large-only} {
+  body {
+    background: blue;
+  }
+}
+
+@media #{$large-up} {
+body {
+    background: yellow;
+  }
+ 
+}
