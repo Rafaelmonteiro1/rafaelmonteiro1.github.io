@@ -1,0 +1,135 @@
+// Custom
+
+html, body{height: 100%;}
+
+.row{
+  margin: 0px;
+}
+
+// ---
+
+.side-top{
+  margin:0px;
+}
+.side-top-components {
+  color: #333;
+  display: block;
+  height: 5px;
+  padding: 0px;
+  background-image: url(../img/bg-side-top-components.png);
+}
+
+.step1 {
+  @extend .side-top-components;
+  background-color: #f44336;
+}
+
+.step2 {
+  @extend .side-top-components;
+  background-color: #03a9f4;
+}
+
+.step3 {
+  @extend .side-top-components;
+  background-color: #ffeb3b;
+}
+
+.step4 {
+  @extend .side-top-components;
+  background-color: #8bc34a;
+}
+
+// --- 
+
+.container-box{
+  box-shadow: 0 0 150px rgba(0, 0, 0, 0.3) inset;
+  display: table;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  padding: 0px;
+  background-image: url(../img/bg-content.png);
+} 
+
+#home{
+  @extend .container-box;
+  background-color: #80cbc4;
+
+  div{
+    line-height: auto;
+
+    h1, h2{
+      margin:0px;
+      text-align: center;
+      font-weight: 300;
+      color:#0c0c0c;
+    }
+  }
+
+  .logo{
+    text-align: center;
+  }
+
+
+}
+
+#works{
+  @extend .container-box;
+  background-color: #ffa726;
+
+  h2{
+    text-align: center;
+    margin: 20px 0 40px;
+    color:#0c0c0c;
+    font-weight: 300;
+  }
+
+}
+ 
+#about{
+  @extend .container-box;
+  background-color: #424242; 
+
+  p{
+    color:#FFF;
+    font-size: 22px;
+    font-weight: 300;
+  }
+
+  ul.social{
+    list-style: none;
+    padding: 0px;
+
+    li{
+      float: left;
+      margin:0 10px 0 0;
+    }
+  }
+
+  .foto{
+    text-align: center;
+  }
+  
+  .conhecimento{
+    margin: 40px 0 0 0;
+    text-align: center;
+  }
+}
+
+// --
+
+.wrapper-inner {
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0 auto;
+  float: none;
+}
+
+.box-imgs-portfolio{
+  text-align: center;
+  padding: 0px;
+  margin:0 0 50px 0;
+}
+
+
+// --
