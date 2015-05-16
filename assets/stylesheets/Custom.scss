@@ -37,7 +37,7 @@ html, body{height: 100%;}
 .step4 {
   @extend .side-top-components;
   background-color: #8bc34a;
-}
+} 
 
 // --- 
 
@@ -50,7 +50,7 @@ html, body{height: 100%;}
   padding: 0px;
   background-image: url(../img/bg-content.png);
 } 
-
+  
 #home{
   @extend .container-box;
   background-color: #80cbc4;
@@ -130,6 +130,5 @@ html, body{height: 100%;}
   padding: 0px;
   margin:0 0 50px 0;
 }
-
 
 // --

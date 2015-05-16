@@ -31,7 +31,7 @@ module.exports = function( grunt ) {
           'assets/scripts/**/*',
           'assets/stylesheets/**/*'
         ],
-        tasks : [ 'uglify', 'sass' , 'imagemin' ]
+        tasks : [ 'uglify', 'sass' , 'imagemin']
       }
     }, // watch
     imagemin: {                          // Task 
@@ -43,19 +43,38 @@ module.exports = function( grunt ) {
           dest: 'img/'                  // Destination path prefix 
         }]
       }
-    } // Imagemin
+    }, // Imagemin
+    browserSync: {
+        bsFiles: {
+            src : [
+              'assets/scripts/**/*',
+              'assets/stylesheets/**/*',
+              'css/*.css',
+              'js/*.js',
+              '*.html'
+            ]
+        },
+        options: {
+          watchTask: true,
+          proxy: "rafaelmonteiro.localhost"
+        }
+    }
   });
 
   // Plugins do Grunt
   grunt.loadNpmTasks( 'grunt-contrib-imagemin' );
+  grunt.loadNpmTasks( 'grunt-browser-sync' );
   grunt.loadNpmTasks( 'grunt-contrib-uglify' );
   grunt.loadNpmTasks( 'grunt-contrib-sass' );
   grunt.loadNpmTasks( 'grunt-contrib-watch' );
 
   // Tarefas que serão executadas
-  grunt.registerTask( 'default', [ 'uglify', 'sass' , 'imagemin' ] );
+  grunt.registerTask( 'd', [ 'browserSync', 'watch' ] );
+  grunt.registerTask( 'u', [ 'uglify' ] );
+  grunt.registerTask( 's', [ 'sass' ] );
+  grunt.registerTask( 'i', [ 'imagemin' ] );
 
   // Tarefa para Watch
-  grunt.registerTask( 'w', [ 'watch' ] );
+  grunt.registerTask( 'w', ['watch'] );
 
 };
