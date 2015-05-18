@@ -83,6 +83,14 @@ html, body{height: 100%;}
     color:#0c0c0c;
     font-weight: 300;
   }
+  
+  .box-imgs-portfolio{
+    text-align: center;
+    padding: 0px;
+    margin:0 0 50px 0;
+
+  }
+
 
 }
  
@@ -106,14 +114,7 @@ html, body{height: 100%;}
     }
   }
 
-  .foto{
-    text-align: center;
-  }
   
-  .conhecimento{
-    margin: 40px 0 0 0;
-    text-align: center;
-  }
 }
 
 // --
@@ -125,10 +126,49 @@ html, body{height: 100%;}
   float: none;
 }
 
-.box-imgs-portfolio{
-  text-align: center;
-  padding: 0px;
-  margin:0 0 50px 0;
-}
-
 // --
+
+
+@media  (max-width: $screen-sm) {
+  #home,
+  #works,
+  #about{
+    padding: 100px 0;
+  }
+  
+  #home{
+    h1{font-size: 45px;}
+    h2{font-size: 30px;}
+
+  }
+  #about{
+
+    .texto-about{
+      text-align: center;
+    }
+  }
+}
+@media (min-width: $screen-sm) and (max-width: $screen-md) {
+  #home,
+  #works,
+  #about{
+    padding: 100px 0;
+  }
+  
+  #home{
+    h1{font-size: 45px;}
+    h2{font-size: 30px;}
+
+  }
+  #about{
+    .foto,
+    .texto-about{
+      text-align: center;
+    }
+  } 
+
+}
+@media (min-width:$screen-md) {
+
+  
+}
