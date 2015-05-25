@@ -14,6 +14,7 @@
 
 // Container that the modal scrolls within
 .modal {
+  background: url("../img/bg-side-top-components.png");
   display: none;
   overflow: hidden;
   position: fixed;
@@ -43,17 +44,17 @@
 // Shell div to position the modal with bottom padding
 .modal-dialog {
   position: relative;
-  width: auto;
+  width: 90%;
   margin: 10px;
 }
-
+ 
 // Actual modal
 .modal-content {
   position: relative;
   background-color: $modal-content-bg;
   border: 1px solid $modal-content-fallback-border-color; //old browsers fallback (ie8 etc)
   border: 1px solid $modal-content-border-color;
-  border-radius: $border-radius-large;
+  // border-radius: $border-radius-large;
   @include box-shadow(0 3px 9px rgba(0,0,0,.5));
   background-clip: padding-box;
   // Remove focus outline from opened modal

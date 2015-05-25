@@ -12,11 +12,13 @@
 
 // Components
 @import "bootstrap/navs";
-
+@import "bootstrap/labels";
 @import "bootstrap/responsive-embed";
 
 // Components w/ JavaScript
 @import "bootstrap/tooltip";
+@import "bootstrap/modals";
+@import "bootstrap/carousel";
 
 // Utility classes
 @import "bootstrap/utilities";

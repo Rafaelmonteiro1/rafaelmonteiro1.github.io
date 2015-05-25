@@ -88,7 +88,10 @@ html, body{height: 100%;}
     text-align: center;
     padding: 0px;
     margin:0 0 50px 0;
-
+    
+    img{
+      width: 70%;
+    } 
   }
 
 
@@ -128,6 +131,33 @@ html, body{height: 100%;}
 
 // --
 
+.modal-dialog {
+  .text-right{
+    text-align: right;
+    .close{
+      background: url(../img/fechar.png) no-repeat center center;
+      width: 34px;
+      height: 41px;
+      border:none;
+      margin-top: 18px;
+    }
+  }
+  .modal-title{
+    font-size: 58px;
+  }
+  .left{
+    .glyphicon{
+      background: url(../img/Previous.png) no-repeat center center / 100% 100%;
+    }
+  }
+  .right{
+    .glyphicon{
+      background: url(../img/Next.png) no-repeat center center / 100% 100%;
+    }
+  }
+}
+
+
 
 @media  (max-width: $screen-sm) {
   #home,
@@ -135,7 +165,6 @@ html, body{height: 100%;}
   #about{
     padding: 100px 0;
   }
-  
   #home{
     h1{font-size: 45px;}
     h2{font-size: 30px;}
@@ -146,7 +175,10 @@ html, body{height: 100%;}
     .texto-about{
       text-align: center;
     }
+    
   }
+
+  
 }
 @media (min-width: $screen-sm) and (max-width: $screen-md) {
   #home,
@@ -165,10 +197,32 @@ html, body{height: 100%;}
     .texto-about{
       text-align: center;
     }
-  } 
+    ul.social{
+      width: 280px;
+      margin:0 auto;
+    }
+  }
+
+  .modal-dialog {
+    .text-right{
+      .close{
+        background: url(../img/fechar.png) no-repeat center center;
+        width: 17px;
+        height: 20px;
+        margin-top: 10px;
+        background-size: 20px 17px;
+      }
+    }
+    .modal-title{
+      font-size: 30px;
+    }
+    .carousel{
+      margin:20px 0 0 0;
+    }
+  }
 
 }
 @media (min-width:$screen-md) {
 
   
-}
+} 
